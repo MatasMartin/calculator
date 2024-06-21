@@ -78,6 +78,8 @@
     left: 394.5px;
     /* left: 400px; */
 
+    box-shadow: inset 0px 0px 5px 0px rgb(55, 55, 55);
+
     background-color: rgb(13,13,13);
     /* background-color: pink; */
     border: 1px solid rgb(80, 80, 80);
@@ -99,7 +101,8 @@
     background-color: rgb(40,40,40);
     /* background-color: pink; */
 
-    box-shadow: inset 0px 0px 20px 10px rgb(78,78,78) ;
+    box-shadow: inset 0px 0px 20px 10px rgb(78,78,78), 0px 0px 1px 1px rgb(78,78,78);
+    
 
     height: 758px;
     width: 347px;
@@ -112,7 +115,7 @@
     position: absolute;
     top: 143px;
     /* top: 61px; */
-    /* left: 940px; */
+    /* left: 939px; */
     left: 555px;
     /* left: 400px; */
 
@@ -121,7 +124,7 @@
 
     box-shadow: inset 0px 0px 3px 0px black;
     border: 1px solid rgb(49, 49, 49);
-    border-radius: 10px;
+    border-radius: 15px;
 
     height: 73px;
     width: 165px;
@@ -131,7 +134,7 @@
 
 .name {
     position: absolute;
-    top: 143px;
+    top: 155px;
     /* top: 61px; */
     left: 900px;
     /* left: 500px; */
@@ -139,13 +142,18 @@
 
     color: rgb(191,191,191);
     font-family: "Titillium Web", sans-serif;
-    font-weight: 800;
     letter-spacing: 0.05rem;
     
-
+    
     z-index: 4;
 }
 
 .name .casio {
     font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.name .fx {
+    margin-top: -6px;
+    font-weight: 600;
 }
