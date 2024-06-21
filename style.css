@@ -82,7 +82,47 @@
 
 /* /////////////////// */
 
+.top-left, .top-right, .bottom-left, .bottom-right {
+    position: absolute;
+    background-color: rgb(41,41,41);
+    /* background-color: pink; */
+    height: 7px;
+    width: 7px;
+    z-index: 4;
+    border-radius: 2px;
+}
 
+.top-left, .top-right {
+    box-shadow: 0px 0px 2px 0px black, inset 0px -1px 5px -3px rgb(176, 176, 176);
+}
+
+.bottom-left, .bottom-right {
+    box-shadow: 0px 0px 2px 0px black, inset 0px 1px 5px -3px rgb(176, 176, 176);
+}
+
+.top-left {
+    top: 119px;
+    /* left: 908px; */
+    left: 524px;
+}
+
+.top-right {
+    top: 119px;
+    /* left: 1002px;    */
+    left: 623px;
+}
+
+.bottom-left {
+    top: 902px;
+    /* left: 915px;  */
+    left: 527px;
+}
+
+.bottom-right {
+    top: 902px;
+    /* left: 999px;    */
+    left: 620px;
+}
 
 .outer {
     position: absolute;
@@ -96,6 +136,7 @@
     background-image: url(https://cdn.discordapp.com/attachments/541295970839822336/1253774168357474464/X_calcualtor.png?ex=667713af&is=6675c22f&hm=24e9febedbb9f241511a84d402fecc128c83980d42243f9fcac8d82cf1c6179e&);
     background-size: 20px 20px;
     /* background-color: pink; */
+    box-shadow: 0px 0px 6px 3px black;
     height: 785px;
     width: 375px;
     border-radius: 50px;
@@ -176,7 +217,8 @@
     color: rgb(191,191,191);
     /* color: pink; */
     
-    
+    text-shadow: 0 0 1px rgb(191,191,191);
+
     z-index: 4;
 }
 
@@ -191,4 +233,90 @@
     font-family: 'Roboto', 'Trebuchet MS', sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+.outer-screen {
+
+    position: absolute;
+    top: 230px;
+    /* top: 61px; */
+    /* left: 800px; */
+    left: 415px;
+
+    background-color: rgb(42,42,42);
+    /* background-color: pink; */
+
+    box-shadow: inset 0px 0px 4px 0px black, 0px -2px 3px -1px black, 0px 3px 2px -1px rgb(55, 55, 55);
+    border-radius: 10px;
+
+    height: 153px;
+    width: 317px;
+
+    z-index: 4;
+}
+
+.inner-screen {
+
+    position: absolute;
+    top: 238px;
+    /* top: 61px; */
+    /* left: 810px; */
+    left: 425px;
+
+    background-color: rgb(208,230,218);
+    /* background-color: pink; */
+
+    box-shadow: inset 0px 0px 4px 0px black;
+    border-radius: 10px;
+
+    height: 120px;
+    width: 299px;
+
+    z-index: 4;
+}
+
+.scroll {
+
+    position: absolute;
+    top: 435px;
+    /* top: 61px; */
+    /* left: 1055px; */
+    left: 665px;
+    rotate: 90deg;
+
+    background-color: rgb(36,36,36);
+    /* background-color: pink; */
+
+    box-shadow: inset 5px 0px 13px 2px rgb(55, 55, 55), 0px 0px 3px 2px black, inset 1px 0px 0px 1px rgb(77, 77, 77), inset -1px 0px 10px 0px black;
+    border-radius: 20px;
+
+    height: 35px;
+    width: 83px;
+
+    z-index: 5;
+      
+}
+
+.scroll .up {
+    rotate: -90deg;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    height: 23px;
+    width: auto;
+    border: 0px solid pink;
+    z-index: 6;
+    filter: blur(1px);
+}
+
+.scroll .down {
+    rotate: 90deg;
+    position: absolute;
+    top: 6px;
+    left: 50px;
+    height: 23px;
+    width: auto;
+    border: 0px solid pink;
+    z-index: 6;
+    filter: blur(1px);
 }
