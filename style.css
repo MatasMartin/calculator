@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    
+    overflow: hidden;
+}
+
+/* /////////////////// */
+
+.top {
+    height: 10vh;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    padding-top: 1rem;
+    background-color:cornsilk;
+}
+
+.top h1 {
+    margin: -1rem 0;
+    font-size: 3rem;
+}
+
+.top h2 {
+    font-size: 2rem;
+}
+
+/* /////////////////// */
+
+.middle {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:cornsilk;
+}
+
+/* /////////////////// */
+
+.bottom {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:cornsilk;
+}
+
+/* /////////////////// */
+
+.calculator {
+    
+}
+
+.outer {
+    position: absolute;
+    top: 122px;
+    /* top: 61px; */
+    /* left: 772px; */
+    left: 386px;
+    /* left: 400px; */
+
+    background-color: rgb(41,41,41);
+    background-image: url(https://cdn.discordapp.com/attachments/541295970839822336/1253774168357474464/X_calcualtor.png?ex=667713af&is=6675c22f&hm=24e9febedbb9f241511a84d402fecc128c83980d42243f9fcac8d82cf1c6179e&);
+    background-size: 20px 20px;
+    /* background-color: pink; */
+    height: 785px;
+    width: 375px;
+    border-radius: 50px;
+    z-index: 0;
+}
+
+.inner {
+
+    position: absolute;
+    top: 130px;
+    /* top: 61px; */
+    /* left: 781px; */
+    left: 394.5px;
+    /* left: 400px; */
+
+    background-color: rgb(13,13,13);
+    /* background-color: pink; */
+    border: 1px solid rgb(80, 80, 80);
+    height: 768px;
+    width: 358px;
+    border-radius: 40px;
+    z-index: 1;
+}
+
+.main {
+
+    position: absolute;
+    top: 136px;
+    /* top: 61px; */
+    /* left: 786px; */
+    left: 402px;
+    /* left: 400px; */
+
+    background-color: rgb(40,40,40);
+    /* background-color: pink; */
+
+    box-shadow: inset 0px 0px 20px 10px rgb(78,78,78) ;
+
+    height: 758px;
+    width: 347px;
+    border-radius: 39px;
+    z-index: 2;
+}
+
+.solar {
+
+    position: absolute;
+    top: 143px;
+    /* top: 61px; */
+    /* left: 940px; */
+    left: 555px;
+    /* left: 400px; */
+
+    background-color: rgb(46,31,27);
+    /* background-color: pink; */
+
+    box-shadow: inset 0px 0px 3px 0px black;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 10px;
+
+    height: 73px;
+    width: 165px;
+
+    z-index: 3;
+}
+
+.name {
+    position: absolute;
+    top: 143px;
+    /* top: 61px; */
+    left: 900px;
+    /* left: 500px; */
+    /* left: 400px; */
+
+    color: rgb(191,191,191);
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    
+
+    z-index: 4;
+}
+
+.name .casio {
+    font-size: 1.6rem;
+}
