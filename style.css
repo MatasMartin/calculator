@@ -4,12 +4,47 @@
     overflow: hidden;
 }
 
+@font-face {
+    font-family: 'Eurostile';
+    src: url(fonts/Eurostile\ Round.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eurostile';
+    src: url(fonts/Eurostile\ Round\ Medium.otf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eurostile';
+    src: url(fonts/Eurostile\ Round\ Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eurostile';
+    src: url(fonts/Eurostile\ Round\ Heavy.otf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eurostile';
+    src: url(fonts/Eurostile\ Round\ Black.otf);
+    font-weight: 900;
+    font-style: normal;
+}
+
 /* /////////////////// */
 
 .top {
     height: 10vh;
     text-align: center;
-    font-family: "Titillium Web", sans-serif;
+    font-family: 'Eurostile', "Titillium Web", sans-serif;
     padding-top: 1rem;
     background-color:cornsilk;
 }
@@ -41,15 +76,13 @@
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     background-color:cornsilk;
 }
 
 /* /////////////////// */
 
-.calculator {
-    
-}
+
 
 .outer {
     position: absolute;
@@ -134,26 +167,28 @@
 
 .name {
     position: absolute;
-    top: 155px;
+    top: 157px;
     /* top: 61px; */
-    left: 900px;
-    /* left: 500px; */
+    /* left: 813px; */
+    left: 431px;
     /* left: 400px; */
 
     color: rgb(191,191,191);
-    font-family: "Titillium Web", sans-serif;
-    letter-spacing: 0.05rem;
+    /* color: pink; */
     
     
     z-index: 4;
 }
 
 .name .casio {
+    font-family: 'Eurostile', "Titillium Web", sans-serif;
+    letter-spacing: 0rem;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .name .fx {
-    margin-top: -6px;
-    font-weight: 600;
+    font-family: 'Roboto', 'Trebuchet MS', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
