@@ -39,6 +39,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ClassWiz';
+    src: url(fonts/CASIO\ ClassWiz\ CW01.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* /////////////////// */
 
 .top {
@@ -333,7 +340,7 @@
     border-radius: 28px;
     /* background-color: pink; */
     background-color: rgb(36,36,36);
-    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 2px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black;
+    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black;
 
     z-index: 5;
 
@@ -355,4 +362,88 @@
 
     z-index: 6;
 
+}
+
+.home {
+    position: absolute;
+    top: 411px;
+    /* top: 61px; */
+    /* left: 860px; */
+    left: 475px;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 40px;
+    /* background-color: pink; */
+    background-color: rgb(36,36,36);
+    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black;
+
+    z-index: 5;
+
+    
+}
+
+.home p {
+    font-family: "ClassWiz", Helvetica, sans-serif;
+    color: rgb(13,13,13);
+    margin-top: -3px;
+    margin-left: -10px;
+    font-size: 2.6rem;
+    text-shadow: 0 0 2px rgb(91, 91, 91);
+}
+
+.undo {
+    position: absolute;
+    top: 459px;
+    /* top: 61px; */
+    /* left: 860px; */
+    left: 475px;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 40px;
+    /* background-color: pink; */
+    background-color: rgb(36,36,36);
+    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black;
+
+    z-index: 5;
+
+    
+}
+
+.undo p {
+    font-family: "ClassWiz", Helvetica, sans-serif;
+    color: rgb(13,13,13);
+    margin-top: -3px;
+    margin-left: -10px;
+    font-size: 2.6rem;
+    text-shadow: 0 0 2px rgb(91, 91, 91);
+}
+
+.settings {
+    position: absolute;
+    top: 459px;
+    /* top: 61px; */
+    /* left: 804px; */
+    left: 419px;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 40px;
+    /* background-color: pink; */
+    background-color: rgb(36,36,36);
+    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black;
+
+    z-index: 5;
+
+    
+}
+
+.settings p {
+    font-family: "ClassWiz", Helvetica, sans-serif;
+    color: rgb(13,13,13);
+    margin-top: -3px;
+    margin-left: -10px;
+    font-size: 2.6rem;
+    text-shadow: 0 0 2px rgb(91, 91, 91);
 }
