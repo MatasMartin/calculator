@@ -242,6 +242,17 @@
     font-weight: 500;
 }
 
+.classwiz {
+    position: absolute;
+    left: 625px;
+    filter: brightness(0) invert(70%);
+    /* left: 1010px; */
+    top: 365.5px;
+    height: 11px;
+    width: auto;
+    z-index: 8;
+}
+
 .outer-screen {
 
     position: absolute;
@@ -911,6 +922,10 @@
     left: 685px;
     width: 100%;
 }
+/* //////////////////// */
+
+
+
 
 
 /* //////////////////// */
