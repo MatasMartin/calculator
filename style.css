@@ -2,6 +2,12 @@
     margin: 0;
     
     overflow: hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 @font-face {
@@ -75,6 +81,10 @@
     background-color:cornsilk;
 }
 
+.middle img {
+    opacity: 0;
+}
+
 /* /////////////////// */
 
 .bottom {
@@ -88,6 +98,16 @@
 }
 
 /* /////////////////// */
+
+.calculator {
+    position: absolute;
+    top: 0px;
+    left: 385px;
+    height: 100%;
+    width: 100%;
+}
+
+/*  */
 
 .top-left, .top-right, .bottom-left, .bottom-right {
     position: absolute;
@@ -305,7 +325,7 @@
     background-color: rgb(36,36,36);
     /* background-color: pink; */
 
-    box-shadow: inset 5px 0px 13px 2px rgb(55, 55, 55), 0px 0px 1px 2px rgb(14, 14, 14), inset 1px 0px 0px 1px rgb(77, 77, 77), inset -1px 0px 10px 0px black;
+    box-shadow: inset 5px 0px 13px 2px rgb(55, 55, 55), 0px 0px 1px 2px rgb(14, 14, 14), inset 1px 0px 0px 1px rgb(77, 77, 77), inset -1px 0px 10px 0px black, 0px 0px 15px 0px black;
     border-radius: 20px;
 
     height: 35px;
@@ -351,10 +371,11 @@
     border-radius: 28px;
     /* background-color: pink; */
     background-color: rgb(36,36,36);
-    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black;
+    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black, 0px 0px 15px 0px black;
 
     z-index: 5;
 
+    
 }
 
 .power-divot {
@@ -387,7 +408,7 @@
     border-radius: 40px;
     /* background-color: pink; */
     background-color: rgb(36,36,36);
-    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black;
+    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black, 0px 0px 15px 0px black;
 
     z-index: 5;
 
@@ -415,7 +436,7 @@
     border-radius: 40px;
     /* background-color: pink; */
     background-color: rgb(36,36,36);
-    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black;
+    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black, 0px 0px 15px 0px black;
 
     z-index: 5;
 
@@ -443,7 +464,7 @@
     border-radius: 40px;
     /* background-color: pink; */
     background-color: rgb(36,36,36);
-    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black;
+    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black, 0px 0px 15px 0px black;
 
     z-index: 5;
 
@@ -466,7 +487,7 @@
     border-radius: 40px;
     /* background-color: pink; */
     background-color: rgb(36,36,36);
-    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black;
+    box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black, 0px 0px 15px 0px black;
 
     z-index: 5;
 
@@ -692,7 +713,7 @@
     border-radius: 40px;
     /* background-color: pink; */
     background-color: transparent;
-    box-shadow: inset 0px 20px 10px -17px rgb(255, 255, 255), inset 0px -20px 10px -19px rgb(0, 0, 0), 0px 0px 2px 2px rgb(10, 10, 10);
+    box-shadow: inset 0px 20px 10px -17px rgb(255, 255, 255), inset 0px -20px 10px -19px rgb(0, 0, 0), 0px 0px 2px 2px rgb(10, 10, 10), 0px 0px 15px 0px black;
     
     z-index: 7;
 
@@ -1129,6 +1150,10 @@
 
 
 
+
+
+/*  */
+
 .lower-buttons .button {
     position: relative;
     top: 3px;
@@ -1177,11 +1202,102 @@
     height: 45px;
     width: 45px;
     border-radius: 50px;
-    box-shadow: inset 0px 5px 13px 2px rgb(63, 63, 63), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(83, 83, 83), inset 0px -1px 10px 0px rgb(24, 24, 24);
+    box-shadow: inset 0px 5px 13px 2px rgb(63, 63, 63), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(83, 83, 83), inset 0px -1px 10px 0px rgb(24, 24, 24), 0px 0px 7px 0px black;
     z-index: 8;
 }
 
 .lower-buttons .circlee {
+    position: relative;
+    /* border: 3px solid pink; */
+    /* border: 2px solid rgb(72,74,73); */
+    border-radius: 0px;
+    background-color: rgb(190, 190, 190);
+    top: -119px;
+    left: 85px;
+    height: 5px;
+    width: 5px;
+    z-index: 6;
+}
+
+
+/*  */
+
+.button-format .button {
+    position: relative;
+    top: 3px;
+    left: 52px;
+
+    height: 45px;
+    width: 45px;
+    border-radius: 40px;
+    /* background-color: pink; */
+    background-color: rgb(72,74,73);
+    /* background-color: pink; */
+    
+
+    z-index: 5;
+  
+}
+
+.button-format p {
+    position: absolute;
+    top: -3px;
+    left: 43px;
+    font-family: "ClassWiz", Helvetica, sans-serif;
+    margin-top: 3px;
+    margin-left: 0px;
+    font-size: 3.01rem;
+    z-index: 5;
+}
+
+.button-execute p {
+    position: absolute;
+    top: 2px;
+    left: 47px;
+    font-family: "ClassWiz", Helvetica, sans-serif;
+    margin-top: 3px;
+    margin-left: 0px;
+    font-size: 2.6rem;
+    z-index: 5;
+}
+
+.button-delete p {
+    position: absolute;
+    top: 2px;
+    left: 47px;
+    font-family: "ClassWiz", Helvetica, sans-serif;
+    margin-top: 3px;
+    margin-left: 0px;
+    font-size: 2.6rem;
+    z-index: 5;
+}
+
+.button-format .circle {
+    position: relative;
+    border: 3px solid pink;
+    /* border: 6px solid rgb(72,74,73); */
+    border: 3px solid transparent;
+    border-radius: 50px;
+    top: -41px;
+    left: 53px;
+    height: 37px;
+    width: 37px;
+    z-index: 6;
+}
+
+.button-format .but-overlay {
+    position: relative;
+    top: -86px;
+    left: 52px;
+    /* background-color: pink; */
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    box-shadow: inset 0px 5px 13px 2px rgb(63, 63, 63), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(83, 83, 83), inset 0px -1px 10px 0px rgb(24, 24, 24), 0px 0px 7px 0px black;
+    z-index: 8;
+}
+
+.button-format .circlee {
     position: relative;
     /* border: 3px solid pink; */
     /* border: 2px solid rgb(72,74,73); */
@@ -1255,7 +1371,7 @@
     height: 35px;
     width: 35px;
     border-radius: 40px;
-    box-shadow: inset 0px 5px 13px 2px rgb(63, 63, 63), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(83, 83, 83), inset 0px -1px 10px 0px rgb(24, 24, 24);
+    box-shadow: inset 0px 5px 13px 2px rgb(63, 63, 63), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(83, 83, 83), inset 0px -1px 10px 0px rgb(24, 24, 24), 0px 0px 7px 0px black;
     z-index: 8;
 }
 
@@ -1287,6 +1403,7 @@
 
 .buttons {
     cursor: pointer;
+    
 }
 
 .upper-buttons p {
