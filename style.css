@@ -511,7 +511,7 @@
     /* top: 61px; */
     /* left: 980px; */
     left: 583px;
-    box-shadow: 5px 6px 4px 0px black;
+    box-shadow: 5px 6px 4px 0px black, 0px 0px 2px 2px black, inset 0px 3px 4px -1px rgb(78, 78, 78), inset 0px -1px 4px -1px rgb(0, 0, 0);
 }
 
 .background {
@@ -531,6 +531,7 @@
     width: 103px;
 
     z-index: 2;
+    cursor:default;
 }
 
 .one-corner {
@@ -584,6 +585,8 @@
     width: 40px;
 
     z-index: 4;
+
+    cursor:default;
 }
 
 #up{
@@ -606,3 +609,165 @@
     text-shadow: 0 0 1px rgb(166, 166, 166);
 }
 
+.buttons {
+    cursor: pointer;
+}
+
+.shift1 {
+    position: absolute;
+    top: 516px;
+    /* top: 61px; */
+    /* left: 805px; */
+    left: 419px;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 40px;
+    /* background-color: pink; */
+    background-color: rgb(159,147,110);
+    /* box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black; */
+
+    z-index: 4;
+
+    
+}
+
+.shift1 p {
+    font-family: "ClassWiz", Helvetica, sans-serif;
+    color: rgb(159,147,110);
+    /* color: black; */
+    margin-top: -3px;
+    margin-left: -9px;
+    font-size: 2.6rem;
+    color: transparent;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+}
+
+.shift2 {
+    position: absolute;
+    top: 516px;
+    /* top: 61px; */
+    /* left: 805px; */
+    left: 420px;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 40px;
+    /* background-color: pink; */
+    background-color: transparent;
+    /* box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black; */
+    
+    z-index: 6;
+
+    
+}
+
+.shift2 p {
+    font-family: "ClassWiz", Helvetica, sans-serif;
+    color: rgb(159,147,110);
+    /* color: black; */
+    margin-top: 0px;
+    margin-left: -5px;
+    font-size: 2.1rem;
+    color: transparent;
+    text-shadow: 0px 0px 1px rgb(159,147,110);
+}
+
+.overlay {
+    position: absolute;
+    top: 516px;
+    /* top: 61px; */
+    /* left: 805px; */
+    left: 419px;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 40px;
+    /* background-color: pink; */
+    background-color: transparent;
+    box-shadow: inset 0px 20px 10px -17px rgb(255, 255, 255), inset 0px -20px 10px -19px rgb(0, 0, 0), 0px 0px 2px 2px rgb(10, 10, 10);
+    
+    z-index: 7;
+
+    
+}
+
+.bott {
+    position: absolute;
+    top: 542px;
+    /* top: 61px; */
+    /* left: 805px; */
+    left: 432px;
+
+    height: 3px;
+    width: 9px;
+    border-radius: 5px;
+    /* background-color: transparent; */
+    background-color: rgb(214, 201, 160);
+    /* box-shadow: inset 0px 0px 10px 0px white; */
+    /* box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black; */
+
+    z-index: 4;
+    filter: blur(1px);
+    
+}
+
+.lef {
+    position: absolute;
+    top: 531px;
+    /* top: 61px; */
+    /* left: 805px; */
+    left: 428px;
+
+    height: 3px;
+    width: 4px;
+    border-radius: 5px;
+    /* background-color: transparent; */
+    background-color: rgb(214, 201, 160);
+    /* box-shadow: inset 0px 0px 10px 0px white; */
+    /* box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black; */
+
+    z-index: 4;
+    filter: blur(1px);
+    
+}
+
+.righ {
+    position: absolute;
+    top: 531px;
+    /* top: 61px; */
+    /* left: 805px; */
+    left: 441px;
+
+    height: 3px;
+    width: 4px;
+    border-radius: 5px;
+    /* background-color: transparent; */
+    background-color: rgb(214, 201, 160);
+    /* box-shadow: inset 0px 0px 10px 0px white; */
+    /* box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black; */
+
+    z-index: 4;
+    filter: blur(1px);
+    
+}
+
+.highlight {
+    position: absolute;
+    top: 521px;
+    /* top: 61px; */
+    /* left: 805px; */
+    left: 425px;
+
+    height: 10px;
+    width: 15px;
+    border-radius: 5px;
+    /* background-color: transparent; */
+    background-color: rgba(255, 255, 255, 0.81);
+    /* box-shadow: inset 0px 0px 10px 0px white; */
+    /* box-shadow: inset 0px 5px 13px 2px rgb(55, 55, 55), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(77, 77, 77), inset 0px -1px 10px 0px black; */
+
+    z-index: 6;
+    filter: blur(4px);
+    
+}
