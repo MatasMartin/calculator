@@ -924,35 +924,145 @@
 }
 /* //////////////////// */
 
+.button-7 {
+    position: absolute;
+    top: 660px;
+    /* top: 61px; */
+    /* left: 750px; */
+    left: 365px;
+    width: 100%; 
+    height: 100%;
+} 
 
+.button-4 {
+    position: absolute;
+    top: 716px;
+    /* top: 61px; */
+    /* left: 750px; */
+    left: 365px;
+    width: 100%; 
+    height: 100%;
+} 
+
+.button-1 {
+    position: absolute;
+    top: 772px;
+    /* top: 61px; */
+    /* left: 750px; */
+    left: 365px;
+    width: 100%; 
+    height: 100%;
+} 
+
+.button-0 {
+    position: absolute;
+    top: 828px;
+    /* top: 61px; */
+    /* left: 750px; */
+    left: 365px;
+    width: 100%; 
+    height: 100%;
+} 
+
+.button-8 {
+    position: absolute;
+    top: 660px;
+    /* top: 61px; */
+    /* left: 750px; */
+    left: 435px;
+    width: 100%; 
+    height: 100%;
+} 
+
+.button-5 {
+    position: absolute;
+    top: 716px;
+    /* top: 61px; */
+    /* left: 750px; */
+    left: 435px;
+    width: 100%; 
+    height: 100%;
+} 
+
+.button-2 {
+    position: absolute;
+    top: 772px;
+    /* top: 61px; */
+    /* left: 750px; */
+    left: 435px;
+    width: 100%; 
+    height: 100%;
+} 
+
+.button-period {
+    position: absolute;
+    top: 828px;
+    /* top: 61px; */
+    /* left: 750px; */
+    left: 435px;
+    width: 100%; 
+    height: 100%;
+} 
 
 
 
 /* //////////////////// */
 
-.upper {
+
+
+.lower-buttons .button {
     position: relative;
-    background-color: pink;
-    background-color: rgb(65,67,67);
-    border-radius: 10px;
-    top: -83px;
-    left: 20px;
-    height: 5px;
-    width: 15px;
-    z-index: 7; 
+    top: 3px;
+    left: 52px;
+
+    height: 45px;
+    width: 45px;
+    border-radius: 40px;
+    /* background-color: pink; */
+    background-color: rgb(72,74,73);
+    /* background-color: pink; */
+    
+
+    z-index: 5;
+  
 }
 
-.lower {
-    position: relative;
-    background-color: pink;
-    background-color: rgb(65,67,67);
-    border-radius: 10px;
-    top: -63px;
-    left: 20px;
-    height: 5px;
-    width: 15px;
-    z-index: 7; 
+.lower-buttons p {
+    position: absolute;
+    top: 2px;
+    left: 48px;
+    font-family: "ClassWiz", Helvetica, sans-serif;
+    margin-top: 3px;
+    margin-left: 0px;
+    font-size: 2.6rem;
+    z-index: 5;
 }
+
+.lower-buttons .circle {
+    position: relative;
+    border: 6px solid pink;
+    border: 6px solid rgb(72,74,73);
+    border-radius: 50px;
+    top: -41px;
+    left: 53px;
+    height: 32px;
+    width: 32px;
+    z-index: 6;
+}
+
+.lower-buttons .but-overlay {
+    position: relative;
+    top: -86px;
+    left: 52px;
+    /* background-color: pink; */
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    box-shadow: inset 0px 5px 13px 2px rgb(63, 63, 63), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(83, 83, 83), inset 0px -1px 10px 0px rgb(24, 24, 24);
+    z-index: 8;
+}
+
+/*  */
 
 .middle-buttons .button {
     position: relative;
@@ -964,7 +1074,7 @@
     border-radius: 40px;
     /* background-color: pink; */
     background-color: rgb(65,67,67);
-    
+    /* background-color: pink; */
 
     z-index: 5;
   
@@ -981,7 +1091,7 @@
     z-index: 5;
 }
 
-.circle {
+.middle-buttons .circle {
     position: relative;
     border: 6px solid pink;
     border: 6px solid rgb(65,67,67);
@@ -993,7 +1103,7 @@
     z-index: 6;
 }
 
-.circlee {
+.middle-buttons .circlee {
     position: relative;
     border: 3px solid pink;
     border: 3px solid rgb(65,67,67);
@@ -1005,7 +1115,7 @@
     z-index: 6;
 }
 
-.but-overlay {
+.middle-buttons .but-overlay {
     position: relative;
     top: -50px;
     left: 10px;
@@ -1017,6 +1127,32 @@
     z-index: 8;
 }
 
+.middle-buttons .upper {
+    position: relative;
+    background-color: pink;
+    background-color: rgb(65,67,67);
+    border-radius: 10px;
+    top: -83px;
+    left: 20px;
+    height: 5px;
+    width: 15px;
+    z-index: 7; 
+}
+
+.middle-buttons .lower {
+    position: relative;
+    background-color: pink;
+    background-color: rgb(65,67,67);
+    border-radius: 10px;
+    top: -63px;
+    left: 20px;
+    height: 5px;
+    width: 15px;
+    z-index: 7; 
+}
+
+/*  */
+
 .buttons {
     cursor: pointer;
 }
@@ -1027,6 +1163,11 @@
 }
 
 .middle-buttons p {
+    color: transparent;
+    text-shadow: 0 0 1px rgb(224, 224, 224);
+}
+
+.lower-buttons p {
     color: transparent;
     text-shadow: 0 0 1px rgb(224, 224, 224);
 }
