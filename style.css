@@ -288,7 +288,7 @@
     top: 435px;
     /* top: 61px; */
     /* left: 1055px; */
-    left: 665px;
+    left: 670px;
     rotate: 90deg;
 
     background-color: rgb(36,36,36);
@@ -333,7 +333,7 @@
     top: 411px;
     /* top: 61px; */
     /* left: 808px; */
-    left: 423px;
+    left: 424px;
 
     height: 28px;
     width: 28px;
@@ -425,7 +425,7 @@
     top: 459px;
     /* top: 61px; */
     /* left: 804px; */
-    left: 419px;
+    left: 420px;
 
     height: 35px;
     width: 35px;
@@ -599,26 +599,22 @@
     box-shadow: 9px 5px 4px 1px black;
 }
 
-.calculator p {
-    color: transparent;
-    text-shadow: 0 0 1px #101010;
-}
 
-.name p {   
-    color: transparent;
-    text-shadow: 0 0 1px rgb(166, 166, 166);
-}
 
-.buttons {
-    cursor: pointer;
-}
+/* ////////////////////// */
+
+
+
+
+
+/* /////////////////////////// */
 
 .shift1 {
     position: absolute;
     top: 516px;
     /* top: 61px; */
     /* left: 805px; */
-    left: 419px;
+    left: 420px;
 
     height: 35px;
     width: 35px;
@@ -770,4 +766,257 @@
     z-index: 6;
     filter: blur(4px);
     
+}
+
+.x-button {
+    position: absolute;
+    top: 553px; 
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 410px;
+    width: 100%;
+}
+
+.ans-button {
+    position: absolute;
+    top: 603px; 
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 410px;
+    width: 100%;
+}
+
+.sin-button {
+    position: absolute;
+    top: 603px; 
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 465px;
+    width: 100%;
+}
+
+.cos-button {
+    position: absolute;
+    top: 603px; 
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 520px;
+    width: 100%;
+}
+
+.tan-button {
+    position: absolute;
+    top: 603px; 
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 575px;
+    width: 100%;
+}
+
+.lpar-button {
+    position: absolute;
+    top: 603px; 
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 630px;
+    width: 100%;
+}
+
+.rpar-button {
+    position: absolute;
+    top: 603px; 
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 685px;
+    width: 100%;
+}
+
+.function-button {
+    position: absolute;
+    top: 503px;
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 520px;
+    width: 100%;
+}
+
+.variable-button {
+    position: absolute;
+    top: 503px;
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 465px;
+    width: 100%;
+}
+
+.catalog-button {
+    position: absolute;
+    top: 503px;
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 630px;
+    width: 100%;
+}
+
+.tools-button {
+    position: absolute;
+    top: 503px;
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 685px;
+    width: 100%;
+}
+
+.fraction-button {
+    position: absolute;
+    top: 553px;
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 465px;
+    width: 100%;
+}
+
+.root-button {
+    position: absolute;
+    top: 553px;
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 520px;
+    width: 100%;
+}
+
+.power-button {
+    position: absolute;
+    top: 553px;
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 575px;
+    width: 100%;
+}
+
+.square-button {
+    position: absolute;
+    top: 553px;
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 630px;
+    width: 100%;
+}
+
+.log-button {
+    position: absolute;
+    top: 553px;
+    /* top: 61px; */
+    /* left: 795px; */
+    left: 685px;
+    width: 100%;
+}
+
+
+/* //////////////////// */
+
+.upper {
+    position: relative;
+    background-color: pink;
+    background-color: rgb(65,67,67);
+    border-radius: 10px;
+    top: -83px;
+    left: 20px;
+    height: 5px;
+    width: 15px;
+    z-index: 7; 
+}
+
+.lower {
+    position: relative;
+    background-color: pink;
+    background-color: rgb(65,67,67);
+    border-radius: 10px;
+    top: -63px;
+    left: 20px;
+    height: 5px;
+    width: 15px;
+    z-index: 7; 
+}
+
+.middle-buttons .button {
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 40px;
+    /* background-color: pink; */
+    background-color: rgb(65,67,67);
+    
+
+    z-index: 5;
+  
+}
+
+.middle-buttons p {
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    font-family: "ClassWiz", Helvetica, sans-serif;
+    margin-top: 3px;
+    margin-left: 0px;
+    font-size: 1.8rem;
+    z-index: 5;
+}
+
+.circle {
+    position: relative;
+    border: 6px solid pink;
+    border: 6px solid rgb(65,67,67);
+    border-radius: 10px;
+    top: -19px;
+    left: 10px;
+    height: 15px;
+    width: 23px;
+    z-index: 6;
+}
+
+.circlee {
+    position: relative;
+    border: 3px solid pink;
+    border: 3px solid rgb(65,67,67);
+    border-radius: 10px;
+    top: -19px;
+    left: 13px;
+    height: 21px;
+    width: 23px;
+    z-index: 6;
+}
+
+.but-overlay {
+    position: relative;
+    top: -50px;
+    left: 10px;
+    /* background-color: pink; */
+    height: 35px;
+    width: 35px;
+    border-radius: 40px;
+    box-shadow: inset 0px 5px 13px 2px rgb(63, 63, 63), 0px 0px 1px 3px rgb(14, 14, 14), inset 0px 1px 0px 1px rgb(83, 83, 83), inset 0px -1px 10px 0px rgb(24, 24, 24);
+    z-index: 8;
+}
+
+.buttons {
+    cursor: pointer;
+}
+
+.upper-buttons p {
+    color: transparent;
+    text-shadow: 0 0 1px #101010;
+}
+
+.middle-buttons p {
+    color: transparent;
+    text-shadow: 0 0 1px rgb(224, 224, 224);
+}
+
+.name p {   
+    color: transparent;
+    text-shadow: 0 0 1px rgb(166, 166, 166);
 }
