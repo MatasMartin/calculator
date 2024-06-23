@@ -90,7 +90,7 @@
 
 /* /////////////////// */
 
-.bottom {
+#footer {
     height: 10vh;
     display: flex;
     align-items: center;
@@ -114,6 +114,142 @@
 }
 
 /*  */
+#aOn-button {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+
+    z-index: 100;  
+    cursor: pointer;
+}
+#aOn-button {top: 410px; left: 804px;}
+
+#aScroll-button {
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 84px;
+    width: 33px;
+    border-radius: 100px;
+
+    z-index: 100;  
+    cursor: pointer;
+}
+#aScroll-button {top: 410px; left: 1075px;}
+
+
+#aHome-button, #aSettings-button, #aUndo-button,
+#aUp-button, #aDown-button, #aLeft-button, #aRight-button, #aOk-button, 
+#aShift-button, #aVariable-button, #aFunction-button, #aCatalog-button, #aTool-button, 
+#aX-button, #aFraction-button, #aRoot-button, #aPower-button, #aSquare-button, #aLog-button, 
+#aAns-button, #aSin-button, #aCos-button, #aTan-button, #aLPar-button, #aRPar-button {
+
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+
+    z-index: 100;
+    cursor: pointer;
+}
+#aHome-button {top: 411px; left: 855px;}
+#aSettings-button {top: 459px; left: 800px;}
+#aUndo-button {top: 459px; left: 855px;}
+
+#aUp-button {top: 411px; left: 963px;}
+#aDown-button{top: 507px; left: 963px;}
+#aLeft-button{top: 459px; left: 910px;}
+#aRight-button{top: 459px; left: 1015px;}
+#aOk-button{top: 459px; left: 964px;}
+
+#aShift-button {top: 515px; left: 800px;}
+#aVariable-button{top: 515px; left: 855px;}
+#aFunction-button{top: 515px; left: 910px;}
+#aCatalog-button{top: 515px; left: 1020px;}
+#aTool-button{top: 515px; left: 1075px;}
+
+#aX-button {top: 565px; left: 800px;}
+#aFraction-button{top: 565px; left: 855px;}
+#aRoot-button{top: 565px; left: 910px;}
+#aPower-button{top: 565px; left: 965px;}
+#aSquare-button{top: 565px; left: 1020px;}
+#aLog-button{top: 565px; left: 1075px;}
+
+#aAns-button {top: 615px; left: 800px;}
+#aSin-button{top: 615px; left: 855px;}
+#aCos-button{top: 615px; left: 910px;}
+#aTan-button{top: 615px; left: 965px;}
+#aLPar-button{top: 615px; left: 1020px;}
+#aRPar-button{top: 615px; left: 1075px;}
+
+#zero, #one, #two, #three, #four, 
+#five, #six, #seven, #eight, #nine, 
+#period, 
+#eButton, #delete, #multiply, #add, #format, 
+#AC, #divide, #subtract, #execute {
+
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 47px;
+    width: 47px;
+    border-radius: 100px;
+
+    z-index: 100;
+    cursor: pointer;
+}
+#zero {top:830px; left: 796px;}
+#one {top:774px; left: 796px;}
+#two {top:774px; left: 864px;}
+#three {top:774px; left: 932px;}
+#four {top:718px; left: 796px;}
+#five {top:718px; left: 864px;}
+#six {top:718px; left: 932px;}
+#seven {top:662px; left: 796px;}
+#eight {top:662px; left: 864px;}
+#nine {top:662px; left: 932px;}
+
+#period {top:830px; left: 864px;}
+#eButton{top:830px; left: 932px;}
+#delete{top:662px; left: 1000px;}
+#multiply{top:718px; left: 1000px;}
+#add{top:774px; left: 1000px;}
+#format{top:830px; left: 1000px;} 
+#AC{top:662px; left: 1068px;}
+#divide{top:718px; left: 1068px;}
+#subtract{top:774px; left: 1068px;}
+#execute{top:830px; left: 1068px;}
+
+
+
+
+/*  */
+
+.screen-text {
+    /* background-color: pink; */
+    position: absolute;
+    top: 263px;
+    left: 440px;
+    height: 70px;
+    width: 270px;
+    z-index: 10;
+    
+}
+
+#screen-text {
+    font-family: "VT323", sans-serif;
+    font-size: 3rem;
+    margin-top: 10px;
+}
 
 .power-screen {
     margin: 0px 0px;
@@ -146,7 +282,7 @@
     text-shadow: 0px 0px 0.1px rgb(49, 56, 49);
 }
 
-.power-screen a, p {
+.power-screen a, .power-screen p {
     margin-bottom: 0.1rem;
     margin-top: -0.1rem;
     width: 100%;
@@ -368,6 +504,8 @@
     z-index: 4;
 }
 
+
+
 .scroll {
 
     position: absolute;
@@ -477,6 +615,7 @@
     margin-left: -10px;
     font-size: 2.6rem;
     text-shadow: 0 0 2px rgb(91, 91, 91);
+    
 }
 
 .undo {
@@ -1456,14 +1595,12 @@
 
 /*  */
 
-.buttons {
-    cursor: pointer;
-    
-}
+
 
 .upper-buttons p {
     color: transparent;
     text-shadow: 0 0 1px #101010;
+    width: 50px;
 }
 
 .middle-buttons p {

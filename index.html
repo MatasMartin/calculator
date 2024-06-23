@@ -21,13 +21,16 @@
         <img src="https://cdn.discordapp.com/attachments/541295970839822336/1253763553911902281/image.png?ex=667709cd&is=6675b84d&hm=ea5e3dd312586aaad87acc6c6902c0e0c7f81108ccd16e856cb81fbbdb4c2735&" alt="calculatoer">
     </div>
 
-    <div class="bottom">
+    <div class="bottom" id="footer">
         <p>Copyright © MatasMartin 2024</p>
     </div>
 
     <!-- CALCULATOR: -->
 
     <div class="calculator">
+        <div class="screen-text">
+            <p id="screen-text"></p>
+        </div>
         <div class="animations">
             <div class="power-screen" id="power-screen" >
                 <h1>CASIO</h1>
@@ -53,7 +56,9 @@
         <div>
             <img class="classwiz" src="https://edu.casio.com/assets/images/products/cwiz/fx991ex/logo.png" alt="ClassWiz logo">
         </div>
+        
         <div class="buttons">
+            
             <div class="upper-buttons">
                 <div class="scroll">
                     <img class="scroll-up" src="https://cdn.discordapp.com/attachments/541295970839822336/1253850198896021616/scroll.png?ex=66775a7e&is=667608fe&hm=62f02d9136788f7d208a1d5a6eb385d2dc1723e8804230aedd03b2384ec1d428&" alt="scroll">
@@ -260,7 +265,7 @@
 
             </div>
             <div class="lower-buttons">
-                <div class="button-7" id="seven">
+                <div class="button-7">
                     <div class="button"></div>
                     <div class="circle"></div>
                     <p>7</p>
@@ -269,7 +274,7 @@
                     <div class="lower"></div>
                 </div>
 
-                <div class="button-4" id="four">
+                <div class="button-4">
                     <div class="button"></div>
                     <div class="circle"></div>
                     <p>4</p>
@@ -278,7 +283,7 @@
                     <div class="lower"></div>
                 </div>
                 
-                <div class="button-1" id="one">
+                <div class="button-1">
                     <div class="button"></div>
                     <div class="circle"></div>
                     <p>1</p>
@@ -287,7 +292,7 @@
                     <div class="lower"></div>
                 </div>
 
-                <div class="button-0" id="zero">
+                <div class="button-0" >
                     <div class="button"></div>
                     <div class="circle"></div>
                     <p>0</p>
@@ -296,7 +301,7 @@
                     <div class="lower"></div>
                 </div>
 
-                <div class="button-8" id="eight">
+                <div class="button-8">
                     <div class="button"></div>
                     <div class="circle"></div>
                     <p>8</p>
@@ -305,7 +310,7 @@
                     <div class="lower"></div>
                 </div>
 
-                <div class="button-5" id="five">
+                <div class="button-5">
                     <div class="button"></div>
                     <div class="circle"></div>
                     <p>5</p>
@@ -314,7 +319,7 @@
                     <div class="lower"></div>
                 </div>
 
-                <div class="button-2" id="two">
+                <div class="button-2">
                     <div class="button"></div>
                     <div class="circle"></div>
                     <p>2</p>
@@ -323,7 +328,7 @@
                     <div class="lower"></div>
                 </div>
 
-                <div class="button-period" id="period">
+                <div class="button-period">
                     <div class="button"></div>
                     <div class="circle"></div>
                     <p>.</p>
@@ -332,7 +337,7 @@
                     <div class="lower"></div>
                 </div>
 
-                <div class="button-9" id="nine">
+                <div class="button-9">
                     <div class="button"></div>
                     <div class="circle"></div>
                     <p>9</p>
@@ -341,7 +346,7 @@
                     <div class="lower"></div>
                 </div>
 
-                <div class="button-6" id="six">
+                <div class="button-6">
                     <div class="button"></div>
                     <div class="circle"></div>
                     <p>6</p>
@@ -350,7 +355,7 @@
                     <div class="lower"></div>
                 </div>
 
-                <div class="button-3" id="three">
+                <div class="button-3">
                     <div class="button"></div>
                     <div class="circle"></div>
                     <p>3</p>
@@ -443,6 +448,68 @@
 
             </div>
         </div>
+    </div>
+    <div class="overlays">
+        <!--  -->
+        <div id="aOn-button"></div>
+        <div id="aHome-button"></div>
+        <div id="aSettings-button"></div>
+        <div id="aUndo-button"></div>
+
+        <div id="aUp-button"></div>
+        <div id="aDown-button"></div>
+        <div id="aLeft-button"></div>
+        <div id="aRight-button"></div>
+        <div id="aOk-button"></div>
+        <div id="aScroll-button"></div>
+
+        <!--  -->
+
+        <div id="aShift-button"></div>
+        <div id="aVariable-button"></div>
+        <div id="aFunction-button"></div>
+        <div id="aCatalog-button"></div>
+        <div id="aTool-button"></div>
+
+        <div id="aX-button"></div>
+        <div id="aFraction-button"></div>
+        <div id="aRoot-button"></div>
+        <div id="aPower-button"></div>
+        <div id="aSquare-button"></div>
+        <div id="aLog-button"></div>
+
+        <div id="aAns-button"></div>
+        <div id="aSin-button"></div>
+        <div id="aCos-button"></div>
+        <div id="aTan-button"></div>
+        <div id="aLPar-button"></div>
+        <div id="aRPar-button"></div>
+
+        <!--  -->
+
+        <div id="zero"></div>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+        <div id="six"></div>
+        <div id="seven"></div>
+        <div id="eight"></div>
+        <div id="nine"></div>
+
+        <div id="period"></div>
+        <div id="eButton"></div>
+        <div id="delete"></div>
+        <div id="multiply"></div>
+        <div id="add"></div>
+        <div id="format"></div>
+        <div id="AC"></div>
+        <div id="divide"></div>
+        <div id="subtract"></div>
+        <div id="execute"></div>
+
+
     </div>
 
 </body>
